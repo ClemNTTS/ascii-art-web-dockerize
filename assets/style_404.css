@@ -1,0 +1,43 @@
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    border: 7px;
+    border-radius: 5px;
+    box-shadow: 20px;
+    margin : 80px 350px;
+    padding: 20px;
+   font-size: 80px;
+   font-family: "FFF_Tusj";    
+   background-color: rgb(255,255,255,0.8);
+   
+}
+
+body{
+    background-image: url("../assets/SuperTerre.jpg");
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(26, 15, 78);
+    animation: blink 2s infinite;
+}
+
+@font-face {
+    font-family: "FFF_Tusj";
+    src: url("../assets/FFF_Tusj.ttf") format('truetype'); /* Chemin relatif vers le dossier assets */
+}
+
+@keyframes blink {
+    0% { opacity: 1; } /* Opacité à 100% au début de l'animation */
+    50% { opacity: 0.1; } /* Opacité à 0% à mi-chemin de l'animation */
+    100% { opacity: 1; } /* Retour à l'opacité à 100% à la fin de l'animation */
+}

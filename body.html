@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>{{.Title}}</title>
+    <link href="assets/style.css?version=51" rel="stylesheet"/>
+</head>
+<body>
+    <div class="wrapper">
+        <form method="post" action="/">
+            <textarea placeholder="Text to send" name="send_value" value="sfs" required></textarea>
+            <select id="template" name="options">
+                <option value="standard">standard</option>
+                <option value="shadow">shadow</option>
+                <option value="thinkertoy">thinkertoy</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <pre class="result" height="800px">{{.Resultat}}</pre>
+</body>
+</html>

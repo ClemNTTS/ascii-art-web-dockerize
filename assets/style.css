@@ -1,0 +1,62 @@
+.wrapper{
+    max-width: 800px; /* Largeur maximale de la wrapper */
+    margin: 0 auto; /* Centrer la wrapper */
+    padding: 20px;
+}
+
+body{
+    background-image: url("../assets/SuperTerre.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #01388b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    resize: vertical; /* Redimensionnement vertical */
+    height: 150px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+.result{
+    overflow-x: 200px;
+    overflow-y: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 10px 15px 5px rgba(26, 26, 26, 0.466);
+}
+
+select, input[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+input:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+input{
+    border-radius: 8px;
+}
+ /* Media Query pour les petits écrans */
+ @media screen and (max-width: 600px) {
+     .wrapper {
+         padding: 10px; /* Réduire l'espacement pour les petits écrans */
+     }
+     textarea, select, input[type="submit"] {
+         margin-bottom: 5px;
+     }
+ }
